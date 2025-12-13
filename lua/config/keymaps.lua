@@ -15,3 +15,14 @@ vim.keymap.set("n", "k", "gk", { noremap = true, silent = true })
 -- Easier splitting
 vim.api.nvim_set_keymap("n", "vs", ":vs<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "sp", ":sp<CR>", { noremap = true, silent = true })
+
+-- Set language mapping for keyboard layout
+vim.opt.langmap =
+  "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+vim.opt.keymap = "russian-jcukenwin"
+
+-- Set input method for insert mode to English
+vim.opt.iminsert = 0
+
+-- Set input method for search mode to English
+vim.opt.imsearch = 0
